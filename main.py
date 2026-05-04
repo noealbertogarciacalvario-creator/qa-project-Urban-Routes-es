@@ -236,7 +236,7 @@ class TestUrbanRoutes:
         t.sleep(1)
         self.routes_page.click_element(self.routes_page.confirm_code_button)
         self.routes_page.click_element(self.routes_page.reservation_button)
-        t.sleep(3600)
+
 
         order_window = WebDriverWait(self.driver, 10).until(
             EC.visibility_of_element_located(self.routes_page.order_search_title)
