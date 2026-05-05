@@ -8,7 +8,7 @@ Framework de pruebas automatizadas end-to-end para una aplicación web de solici
 
 Este proyecto simula el flujo completo de un usuario dentro de una plataforma de transporte, desde la introducción de la ruta hasta la confirmación del viaje.
 
-Está diseñado para demostrar habilidades en automatización de pruebas, incluyendo diseño de casos de prueba, interacción con interfaces web y organización escalable del código.
+Se utilzaron habilidades en automatización de pruebas, incluyendo diseño de casos de prueba, interacción con interfaces web y organización escalable del código.
 
 ---
 
