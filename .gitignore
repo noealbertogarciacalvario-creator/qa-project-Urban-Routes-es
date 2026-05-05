@@ -1,12 +1,5 @@
-# PyCharm
-.idea/
-
-# Python cache
 __pycache__/
+.pytest_cache/
 *.pyc
-
-# Virtual environment
-.venv/
-
-# Mac files
+.env
 .DS_Store
