@@ -2,9 +2,10 @@ URBAN ROUTES testing
 Sprint 9
 
 Este proyecto contiene pruebas de funcionalidad básica de la aplicación web "Urban Routes".
-Las pruebas estan dirigidas a probar la función principal de la aplicación, pedir un taxi. 
+Las pruebas estan dirigidas a probar la función principal de la aplicación, pedir un taxi.
 Se prueban los campos de entrada del punto de partida y detino del viaje, la selección del tipo de viaje y vehiculo,
-agregar un método de pago, un número de teléfono, requerimentos del viaje (pedir sabanas, toallas, y helado) según el tipo de viaje y reservar el viaje
+agregar un método de pago, un número de teléfono, requerimentos del viaje (pedir sabanas, toallas, y helado) según el
+tipo de viaje y reservar el viaje
 así como esperar a nuestro conductor.
 
 Las pruebas automatizadas interactuan con la GUI utilizando el controlador web Selenium y el POM (page object model)
