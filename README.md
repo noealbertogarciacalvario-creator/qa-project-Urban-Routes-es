@@ -1,14 +1,92 @@
-URBAN ROUTES testing
-Sprint 9
+# 🚕 Urban Routes - Proyecto de Automatización QA
 
-Este proyecto contiene pruebas de funcionalidad básica de la aplicación web "Urban Routes".
-Las pruebas estan dirigidas a probar la función principal de la aplicación, pedir un taxi.
-Se prueban los campos de entrada del punto de partida y detino del viaje, la selección del tipo de viaje y vehiculo,
-agregar un método de pago, un número de teléfono, requerimentos del viaje (pedir sabanas, toallas, y helado) según el
-tipo de viaje y reservar el viaje
-así como esperar a nuestro conductor.
+Framework de pruebas automatizadas end-to-end para una aplicación web de solicitud de viajes, utilizando Selenium, Pytest y el patrón Page Object Model (POM).
 
-Las pruebas automatizadas interactuan con la GUI utilizando el controlador web Selenium y el POM (page object model)
-para facilitar la ejecución de multiples pruebas y hacer el código mas legible.
-La librería Pytest es fue utilizada para realizar las pruebas, y los por ende para el que intente ejecutarlas.
+---
 
+## 📖 Descripción
+
+Este proyecto simula el flujo completo de un usuario dentro de una plataforma de transporte, desde la introducción de la ruta hasta la confirmación del viaje.
+
+Está diseñado para demostrar habilidades en automatización de pruebas, incluyendo diseño de casos de prueba, interacción con interfaces web y organización escalable del código.
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+- Python
+- Selenium WebDriver
+- Pytest
+- Page Object Model (POM)
+- GitHub Actions (CI/CD)
+
+
+---
+
+## 🧪 Cobertura de pruebas
+
+Los tests automatizados cubren:
+
+- Ingreso de origen y destino
+- Selección de tarifa
+- Validación de número telefónico
+- Selección de método de pago
+- Opciones adicionales (mensajes, extras)
+- Confirmación del pedido
+
+---
+
+## 🏗️ Estructura del proyecto
+qa-project-Urban-Routes-es/
+│
+├── pages/ # Clases Page Object Model
+├── tests/ # Casos de prueba
+├── api/ # Lógica relacionada con API (si aplica)
+├── data.py # Datos de prueba
+├── conftest.py # Fixtures de Pytest
+├── requirements.txt
+└── README.md
+
+
+---
+
+## ▶️ Cómo ejecutar las pruebas
+
+1. Clonar el repositorio:
+git clone https://github.com/noealbertogarciacalvario-creator/qa-project-Urban-Routes-es.git
+
+2. Instalar dependencias:
+pip install -r requirements.txt
+
+3. Ejecutar los tests:
+pytest -v
+
+
+---
+
+## 🔄 Integración continua (CI/CD)
+
+Este proyecto utiliza GitHub Actions para ejecutar automáticamente los tests en cada push al repositorio.
+
+---
+
+## 🎯 Objetivo
+
+Este proyecto forma parte de mi portfolio de QA Automation y demuestra:
+
+- Diseño de pruebas automatizadas
+- Implementación del patrón Page Object Model
+- Cobertura de pruebas end-to-end
+- Integración con CI/CD
+
+---
+
+## 🚀 Demo
+
+(Aquí puedes agregar capturas de pantalla o resultados de ejecución de pruebas)
+
+---
+
+## 👨‍💻 Autor
+
+Noe Alberto Garcia Calvario
