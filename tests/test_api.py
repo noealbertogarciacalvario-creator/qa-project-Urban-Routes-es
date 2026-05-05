@@ -1,26 +1,23 @@
-from api.client import APIClient
-
-
-def test_create_post():
-    client = APIClient()
-
-    response = client.create_post(
+def test_create_post(api_client):
+    response = api_client.create_post(
         title="QA Automation",
         body="API testing with requests",
         user_id=1
     )
 
+    data = response.json()
+
     assert response.status_code == 201
-    assert response.json()["title"] == "QA Automation"
-    assert response.json()["body"] == "API testing with requests"
-    assert response.json()["userId"] == 1
+    assert data["title"] == "QA Automation"
+    assert data["body"] == "API testing with requests"
+    assert data["userId"] == 1
 
 
-def test_get_post():
-    client = APIClient()
+def test_get_post(api_client):
+    response = api_client.get_post(1)
 
-    response = client.get_post(1)
+    data = response.json()
 
     assert response.status_code == 200
-    assert response.json()["id"] == 1
-    assert "title" in response.json()
+    assert data["id"] == 1
+    assert "title" in data

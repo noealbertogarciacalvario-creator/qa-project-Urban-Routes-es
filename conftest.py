@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from api.client import APIClient
 
 
 @pytest.fixture
@@ -14,3 +15,8 @@ def driver():
     yield driver
 
     driver.quit()
+
+
+@pytest.fixture
+def api_client():
+    return APIClient()
