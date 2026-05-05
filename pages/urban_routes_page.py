@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 class UrbanRoutesPage:
     # Locators
     from_field = (By.ID, 'from')
@@ -111,7 +112,6 @@ class UrbanRoutesPage:
         self.send_keys(self.card_code_input, card_code)
         self.click_element(self.form_button)
         self.click_element(self.add_button_card)
-
 
     def send_message_to_driver(self, message):
         self.send_keys(self.message_driver_input, message)

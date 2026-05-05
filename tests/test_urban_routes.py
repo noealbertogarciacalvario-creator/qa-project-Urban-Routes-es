@@ -94,6 +94,7 @@ def test_add_credit_card(driver):
 
     assert "Tarjeta" in page.get_payment_method_text()
 
+
 def test_send_message_to_driver(driver):
     page = prepare_comfort_order(driver)
 
@@ -138,9 +139,8 @@ def test_name_of_conductor_appears(driver):
     add_phone_number(driver, page)
     page.click_reservation_button()
 
-
     WebDriverWait(driver, 60).until(
         EC.text_to_be_present_in_element(page.driver_header, "El conductor llegará")
-)
+    )
 
     assert "El conductor llegará" in page.get_driver_header_text()
