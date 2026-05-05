@@ -79,11 +79,7 @@ Este proyecto forma parte de mi portfolio de QA Automation y demuestra:
 - Cobertura de pruebas end-to-end
 - Integración con CI/CD
 
----
 
-## 🚀 Demo
-
-(Aquí puedes agregar capturas de pantalla o resultados de ejecución de pruebas)
 
 ---
 
